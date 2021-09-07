@@ -1,3 +1,5 @@
+// NOT FINISHED YET
+
 import React from "react"
 
 function MyCalc() {

@@ -1,6 +1,7 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a692eacf-851a-4ec5-96cd-7fc1afcc4c4e/deploy-status)](https://app.netlify.com/sites/calculator-with-quotes/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a692eacf-851a-4ec5-96cd-7fc1afcc4c4e/deploy-status)](https://calculator-with-quotes.netlify.app/)
 
 ---
+
 ---
 
 # Getting Started with Create React App
