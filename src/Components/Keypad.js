@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import Key from "./Key"
 
 function Keypad() {
@@ -6,16 +6,14 @@ function Keypad() {
   const [prevValue, setPrevValue] = useState(null);
   const [nextValue, setNextValue] = useState("0");
   const [op, setOp] = useState(null);
-  
-  useEffect(() => {}, [op, nextValue, prevValue]);
 
   // This Object Stores handling of all 5 calculator operations
   const CalculatorOperations = {
-    "/": (firstValue, secondValue) => firstValue / secondValue,
-    "*": (firstValue, secondValue) => firstValue * secondValue,
-    "+": (firstValue, secondValue) => firstValue + secondValue,
-    "-": (firstValue, secondValue) => firstValue - secondValue,
-    "=": (firstValue, secondValue) => secondValue,
+    "/": (x, y) => x / y,
+    "*": (x, y) => x * y,
+    "+": (x, y) => x + y,
+    "-": (x, y) => x - y,
+    "=": (x, y) => y,
   };
 
   // Performs Operation once atleast two umbers and one operation to perform are avaliable
@@ -41,16 +39,18 @@ function Keypad() {
     }
   };
 
+  // Function for Clear Button
   const clearData = () => {
-    setNextValue(0);
     setPrevValue(null);
+    setNextValue("0");
     setOp(null)
   };
 
+  // To handle onClick events on all keys
   const handleOperation = (value) => {
 
     if (Number.isInteger(value)) {
-      // Concatsm the number untill any operation is entered
+      // Concats the number untill any operation is entered
       handleNum(parseInt(value, 10));
     }
     else if (value in CalculatorOperations) {
@@ -76,13 +76,13 @@ function Keypad() {
     }
   };
 
-  console.log(nextValue)
 
     return(
         <div className="Keypad">
             <div className="display">
                 <div className="result"> {prevValue} {op} {nextValue} </div>
             </div>
+            <div className="br"> </div>
             <Key className="keys-numbers" keyValue={7} onClick={handleOperation} />
             <Key className="keys-numbers" keyValue={8} onClick={handleOperation} />
             <Key className="keys-numbers" keyValue={9} onClick={handleOperation} />
