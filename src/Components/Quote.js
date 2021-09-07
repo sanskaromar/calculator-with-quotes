@@ -15,6 +15,8 @@ function Quote() {
             setAuthor(json.quote.author); // GET quote-author from API
         } catch (error) {
             console.log("error", error);
+            setQuote("Thank gya hu bro Quotes fetch karte karte :(");
+            setAuthor("API");
         }
     }
 
