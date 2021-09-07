@@ -1,12 +1,10 @@
-// NOT FINISHED YET
-
 import React from "react"
+import Keypad from "./Keypad"
 
 function MyCalc() {
-    // const style = { "color":"green",}
     return(
-        <div>
-            <p> Pls use your phone calculator untill i make this one :(</p>
+        <div className="calculator">
+            <Keypad />
         </div>
     )
 }

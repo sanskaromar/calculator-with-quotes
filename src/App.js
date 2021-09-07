@@ -2,6 +2,7 @@ import './App.css';
 import MyHeader from "./Components/MyHeader"
 import Quote from "./Components/Quote"
 import MyCalc from "./Components/Calculator"
+import MyFooter from "./Components/MyFooter"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       < MyHeader />
       < MyCalc />
       < Quote />
+      < MyFooter />
     </div>
   );
 }

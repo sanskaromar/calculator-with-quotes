@@ -49,3 +49,66 @@ body {
   /* color: #fbe7c6; */
   transform: scale(1.15);
 }
+
+.calculator {
+  padding: 1%;
+  background-color: #90ee90;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  width: 20rem;
+  height: 25rem;
+  margin: 50px auto;
+  box-shadow: #26394d 0px 20px 30px -10px;
+  display: grid;
+}
+.Clear {
+  grid-area: Clear;
+  min-width: 100%;
+}
+.keys-numbers {
+  grid-area: keys-numbers;
+}
+.keys-operators {
+  grid-area: keys-operators;
+}
+.display {
+  border: #fff solid 5px;
+  box-shadow: #26394d 0px 20px 30px -10px;
+  border-radius: 10px;
+  text-align: right;
+  padding: 8%;
+  font-weight: 800;
+  background-color: #f7f59a;
+}
+.result {
+  min-height: 3rem;
+  color: #777777;
+}
+.Keypad {
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: 
+  "keys-numbers keys-numbers keys-numbers keys-operators"
+  "keys-numbers keys-numbers keys-numbers keys-operators"
+  "keys-numbers keys-numbers keys-numbers keys-operators"
+  "keys-numbers keys-numbers keys-operators keys-operators"
+  "Clear Clear Clear Clear";
+}
+.Keypad > button {
+  color: #330033;
+  text-align: center;
+  background-color: #fbe7c6;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  font-size: 150%;
+  width: 25%;
+  box-shadow: #26394d 0px 20px 30px -10px;
+  margin: auto;
+}
+button:hover {
+  transform: scale(0.9);
+}
+footer {
+  font-size: 1em;
+  margin: 30px auto;
+}
