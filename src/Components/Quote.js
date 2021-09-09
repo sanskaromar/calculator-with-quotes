@@ -16,7 +16,7 @@ function Quote() {
         } catch (error) {
             console.log("error", error);
             // Error handling if API is down for sometime ;)
-            setQuote("Thank gya hu bro Quotes fetch karte karte :(");
+            setQuote("Thak gya hu bro Quotes fetch karte karte :(");
             setAuthor("API");
         }
     }
