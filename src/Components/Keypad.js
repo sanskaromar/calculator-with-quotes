@@ -51,7 +51,7 @@ function Keypad() {
 
     if (Number.isInteger(value)) {
       // Concats the number untill any operation is entered
-      handleNum(parseInt(value, 10));
+      handleNum(value);
     }
     else if (value in CalculatorOperations) {
         if (op === null) {
