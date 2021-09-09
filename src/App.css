@@ -64,18 +64,12 @@ body {
   margin: 50px auto;
   margin-top: 0;
   box-shadow: #26394d 0px 20px 30px -10px;
-  display: grid;
+  /* display: grid; */
 }
 .Clear {
-  grid-area: Clear;
   min-width: 100%;
 }
-.keys-numbers {
-  grid-area: keys-numbers;
-}
-.keys-operators {
-  grid-area: keys-operators;
-}
+
 .display {
   border: #fff solid 5px;
   box-shadow: #26394d 0px 20px 30px -10px;
@@ -89,16 +83,7 @@ body {
   min-height: 3rem;
   color: #777777;
 }
-.Keypad {
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(5, auto);
-  grid-template-areas: 
-  "keys-numbers keys-numbers keys-numbers keys-operators"
-  "keys-numbers keys-numbers keys-numbers keys-operators"
-  "keys-numbers keys-numbers keys-numbers keys-operators"
-  "keys-numbers keys-numbers keys-operators keys-operators"
-  "Clear Clear Clear Clear";
-}
+
 .Keypad > button {
   color: #330033;
   text-align: center;
