@@ -1,8 +1,8 @@
 import React, {useState} from "react"
-
+import ("../App.css")
 function MyHeader() {
     const [theme, setTheme] = useState(() => "../App.css");
-    const [themeImport, setThemeImport] = useState(()=> import("../App.css"));
+    // const [themeImport, setThemeImport] = useState(()=> import("../App.css"));
 
     const handleOnClick = async () => {
         if(theme === '../App-dark.css')
@@ -14,13 +14,11 @@ function MyHeader() {
             
         }else{
             setTheme('../App-dark.css')
-            setThemeImport(import("../App-dark.css"));
+            import("../App-dark.css")
+            // setThemeImport(import("../App-dark.css"));
             // console.log("../App-dark.css")
         }
       }
-    const neverGonnaUseThis = {
-        themeImport = "oh"
-    }
       
     return(
         <div className="header">
