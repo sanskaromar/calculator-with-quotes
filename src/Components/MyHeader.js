@@ -18,6 +18,9 @@ function MyHeader() {
             // console.log("../App-dark.css")
         }
       }
+    const neverGonnaUseThis = {
+        themeImport = "oh"
+    }
       
     return(
         <div className="header">
