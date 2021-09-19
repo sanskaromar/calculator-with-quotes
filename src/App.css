@@ -2,7 +2,7 @@ body {
   margin: 0px;
   color: #2b2839;
   background-color: #e7f1ea;
-  font-family: 'Ruda', sans-serif;
+  font-family: "Ruda", sans-serif;
   font-weight: 600;
   font-size: 25px;
   text-align: center;
@@ -18,8 +18,24 @@ body {
 .header p {
   flex: 50%;
 }
+.header button {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: transparent;
+  border: 5px solid #2b2839;
+  border-radius: 10px;
+  color: transparent;
+  padding: 10px;
+  box-shadow: #26394d 0px 20px 30px -10px;
+  align-self: auto;
+}
+button:active {
+  /* background-color: #2b2839; */
+  /* color: #fbe7c6; */
+  transform: scale(1.15);
+}
 
-.quote{
+.quote {
   color: #330033;
   text-align: center;
   padding: 25px;
@@ -32,7 +48,7 @@ body {
   /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
 }
 .quote .author {
-  color:#990033;
+  color: #990033;
 }
 .quote button {
   background-color: #90ee90;
@@ -40,11 +56,11 @@ body {
   border-radius: 10px;
   color: #2b2839;
   padding: 10px;
-  font-family: 'Ruda', sans-serif;
+  font-family: "Ruda", sans-serif;
   font-weight: 800;
   box-shadow: #26394d 0px 20px 30px -10px;
 }
-.quote button:hover {
+.quote button:active {
   /* background-color: #2b2839; */
   /* color: #fbe7c6; */
   transform: scale(1.15);
@@ -95,7 +111,7 @@ body {
   box-shadow: #26394d 0px 20px 30px -10px;
   margin: auto;
 }
-button:hover {
+button:active {
   transform: scale(0.9);
 }
 

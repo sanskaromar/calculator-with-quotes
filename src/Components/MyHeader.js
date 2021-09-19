@@ -1,9 +1,28 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 
 function MyHeader() {
+    const [theme, setTheme] = useState(() => "../App.css");
+    const [themeImport, setThemeImport] = useState(()=> import("../App.css"));
+
+    const handleOnClick = async () => {
+        if(theme === '../App-dark.css')
+        {
+            setTheme('../App.css')
+            // setThemeImport(import("../App.css"));
+            window.location.reload()
+            // console.log("../App.css")
+            
+        }else{
+            setTheme('../App-dark.css')
+            setThemeImport(import("../App-dark.css"));
+            // console.log("../App-dark.css")
+        }
+      }
+      
     return(
         <div className="header">
-            <p>Calculator</p>
+            
+            <p>Calculat<button onClick={() => handleOnClick()}>.</button>r</p>
         </div>
     )
 }
