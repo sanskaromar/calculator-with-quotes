@@ -1,10 +1,10 @@
 import React from "react"
 
 function MyFooter() {
-    return(
+    return (
         <div>
             <p>...</p>
-            <footer> Made with &#9829; by <a href ="https://linktr.ee/sanskaromar" target="blank">Sanskar</a></footer>
+            <footer> Made with &#9829; by <a href="https://linktr.ee/sanskaromar" target="blank">Sanskar</a></footer>
         </div>
     )
 }

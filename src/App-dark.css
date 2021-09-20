@@ -21,9 +21,10 @@ body {
   .header button {
     width: 2rem;
     height: 2rem;
-    background-color: #e7f1ea;
+    background-color: transparent;
     border: 5px solid #39d553;
-    border-radius: 10px;
+    border-radius: 100%;
+    border-style: double;
     color: transparent;
     padding: 10px;
     box-shadow: #26394d 0px 20px 30px -10px;
